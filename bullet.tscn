@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b5ixw66oaedki"]
 
 [ext_resource type="Script" uid="uid://cfjvwhypwf5h5" path="res://bullet.gd" id="1_v8qja"]
-[ext_resource type="Texture2D" uid="uid://bd4rrqj72amnx" path="res://pistol/projectile.png" id="2_t4vbm"]
+[ext_resource type="Texture2D" uid="uid://crnihr70krj0q" path="res://Tiny Farm Pack/Tiny Farm Pack/Animals/Cow.png" id="2_v8qja"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_d0prb"]
 radius = 18.0
@@ -12,11 +12,14 @@ collision_layer = 0
 collision_mask = 3
 script = ExtResource("1_v8qja")
 
-[node name="Projectile" type="Sprite2D" parent="." unique_id=895250386]
-position = Vector2(-10, -1)
-texture = ExtResource("2_t4vbm")
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=678448965]
 shape = SubResource("CircleShape2D_d0prb")
+
+[node name="Cow" type="Sprite2D" parent="." unique_id=1965244994]
+position = Vector2(3.0000305, -2.0000038)
+scale = Vector2(2.5625, 2.5625)
+texture = ExtResource("2_v8qja")
+region_enabled = true
+region_rect = Rect2(14.614502, 1.7643547, 18.00673, 14.281189)
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
