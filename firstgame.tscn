@@ -99,7 +99,19 @@ theme_override_font_sizes/font_size = 60
 text = "Game Over"
 
 [node name="Area2D" parent="." unique_id=610631214 instance=ExtResource("3_bfkdv")]
-position = Vector2(2171, 672)
+position = Vector2(2208, 546)
+
+[node name="Area2D2" parent="." unique_id=468945446 instance=ExtResource("3_bfkdv")]
+position = Vector2(2160, 1036)
+
+[node name="Area2D3" parent="." unique_id=176192397 instance=ExtResource("3_bfkdv")]
+position = Vector2(-339, 1094)
+
+[node name="Area2D4" parent="." unique_id=1425011709 instance=ExtResource("3_bfkdv")]
+position = Vector2(990, 1265)
+
+[node name="Area2D5" parent="." unique_id=220688674 instance=ExtResource("3_bfkdv")]
+position = Vector2(2425, 774)
 
 [connection signal="health_depleted" from="Player" to="." method="_on_player_health_depleted"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
