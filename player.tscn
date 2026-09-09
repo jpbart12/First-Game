@@ -24,6 +24,9 @@ corner_radius_top_right = 8
 corner_radius_bottom_right = 8
 corner_radius_bottom_left = 8
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_uioyg"]
+radius = 34.058773
+
 [node name="Player" type="CharacterBody2D" unique_id=1366404591]
 script = ExtResource("1_onrkg")
 
@@ -56,3 +59,12 @@ theme_override_styles/background = SubResource("StyleBoxFlat_f1xjs")
 theme_override_styles/fill = SubResource("StyleBoxFlat_d0prb")
 value = 100.0
 show_percentage = false
+
+[node name="Heal" type="Area2D" parent="." unique_id=1800737705]
+unique_name_in_owner = true
+collision_layer = 0
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Heal" unique_id=120329256]
+shape = SubResource("CircleShape2D_uioyg")
+debug_color = Color(1.973361e-06, 0.6334901, 0.44341752, 0.41960785)

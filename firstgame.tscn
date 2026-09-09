@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://b5a0lcvc34l1m" path="res://firstgame.gd" id="1_bfkdv"]
 [ext_resource type="PackedScene" uid="uid://c1sx7bic4uhdj" path="res://player.tscn" id="1_ushg8"]
 [ext_resource type="PackedScene" uid="uid://vk50tubkjkm1" path="res://pinetree.tscn" id="2_g1rtu"]
+[ext_resource type="PackedScene" uid="uid://bd0xnetauglcd" path="res://food1.tscn" id="3_bfkdv"]
 
 [sub_resource type="Curve2D" id="Curve2D_g1rtu"]
 _data = {
@@ -96,6 +97,9 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 60
 text = "Game Over"
+
+[node name="Area2D" parent="." unique_id=610631214 instance=ExtResource("3_bfkdv")]
+position = Vector2(2171, 672)
 
 [connection signal="health_depleted" from="Player" to="." method="_on_player_health_depleted"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

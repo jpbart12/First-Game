@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bd0xnetauglcd"]
+
+[ext_resource type="Script" uid="uid://buv5ld446nndk" path="res://food.gd" id="1_qhjch"]
+[ext_resource type="Texture2D" uid="uid://dfuei7pxaf2ho" path="res://Ghostpixxells_pixelfood/15_burger.png" id="1_ytvrl"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_d0prb"]
+radius = 18.0
+
+[node name="Area2D" type="Area2D" unique_id=610631214]
+collision_layer = 4
+collision_mask = 5
+script = ExtResource("1_qhjch")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1433339948]
+shape = SubResource("CircleShape2D_d0prb")
+
+[node name="15Burger" type="Sprite2D" parent="." unique_id=237045140]
+scale = Vector2(1.5625, 1.5625)
+texture = ExtResource("1_ytvrl")
